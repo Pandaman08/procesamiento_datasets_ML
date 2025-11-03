@@ -7,6 +7,8 @@ from sklearn.model_selection import train_test_split
 st.set_page_config(page_title="Procesamiento ML", layout="wide")
 st.title("Actividad Individual: Procesamiento de Datasets en ML")
 
+st._config.set_option("theme.base", "light")
+
 with st.expander("Ejercicio 1: Titanic"):
     df_t = load_titanic()
     X_t, y_t = preprocess_titanic(df_t)
